@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Fine Dining</div>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Fine Dining</h1>
+            <p>Experience culinary excellence in every bite</p>
+            <button class="cta-button">Book a Table</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <h2>Our Menu</h2>
+        <div class="menu-grid">
+            <!-- Menu items will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>Founded in 2010, Fine Dining has been serving exceptional cuisine that combines traditional flavors with modern techniques. Our passionate team of chefs creates unforgettable dining experiences using only the finest ingredients.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://blog-cdn.lamudi.pk/blog/wp-content/uploads/2023/01/03073212/image.png" alt="Restaurant interior">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <!-- Gallery items will be dynamically added here -->
+        </div>
+    </section>
+    
+    <div class="modal" id="bookingModal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <h2>Book a Table</h2>
+            <form class="booking-form" id="bookingForm">
+                <div class="form-row">
+                    <label for="bookingName">Name *</label>
+                    <input type="text" id="bookingName" required>
+                </div>
+                <div class="form-row">
+                    <label for="bookingEmail">Email *</label>
+                    <input type="email" id="bookingEmail" required>
+                </div>
+                <div class="form-row">
+                    <label for="bookingPhone">Phone *</label>
+                    <input type="tel" id="bookingPhone" required>
+                </div>
+                <div class="form-row">
+                    <label for="bookingDate">Date *</label>
+                    <input type="date" id="bookingDate" required>
+                </div>
+                <div class="form-row">
+                    <label>Time *</label>
+                    <div class="time-slots" id="timeSlots">
+                        <!-- Time slots will be dynamically populated -->
+                    </div>
+                </div>
+                <div class="form-row">
+                    <label for="bookingGuests">Number of Guests *</label>
+                    <select id="bookingGuests" required>
+                        <option value="">Select number of guests</option>
+                        <option value="1">1 Guest</option>
+                        <option value="2">2 Guests</option>
+                        <option value="3">3 Guests</option>
+                        <option value="4">4 Guests</option>
+                        <option value="5">5 Guests</option>
+                        <option value="6">6 Guests</option>
+                        <option value="7">7 Guests</option>
+                        <option value="8">8 Guests</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="bookingNotes">Special Requests (Optional)</label>
+                    <textarea id="bookingNotes" rows="3"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>Fine Dining Food Street Blue Area<br>
+                   Islamabad, 35002</p>
+                <p>Phone: (555) 123-4567<br>
+                   Email: info@finedining.com</p>
+            </div>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Fine Dining. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook">📱</a>
+            <a href="https://www.instagram.com/finedininglovers/?hl=en" aria-label="Instagram">📸</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
